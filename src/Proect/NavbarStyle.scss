@@ -1,0 +1,260 @@
+/****************** ICONS ******************/
+.icon {
+  width: 50px;
+  height: 50px;
+
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+
+  display: inline-block;
+  vertical-align: sub;
+
+  background-color: black;
+
+  &.icon-location {
+    mask-image: url("images/law.svg");
+    -webkit-mask-image: url("images/law.svg");
+  }
+
+  &.icon-meals {
+    mask-image: url("images/fork.svg");
+    -webkit-mask-image: url("images/fork.svg");
+  }
+
+  &.icon-room {
+    mask-image: url("images/gym.svg");
+    -webkit-mask-image: url("images/gym.svg");
+  }
+
+}
+
+/******************* COLORS ********************/
+$color-nav: #333333;
+$color-nav2: #444444;
+$color-warning: #FFAA00;
+
+/***************** ADD CLASS ******************/
+.color-warning {
+  color: $color-warning;
+}
+
+.bg-warning2 {
+  background-color: $color-warning;
+}
+
+.f-size-60 {
+  font-size: 60px;
+}
+
+.circle {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+.mb-6{
+  margin-bottom: 200px;
+}
+
+
+/**************** STYLE *******************/
+* {
+
+
+  #navbar {
+    background-color: $color-nav;
+
+
+    .navLink {
+
+      &:hover {
+        background-color: $color-nav2;
+        color: $color-warning !important;
+      }
+    }
+  }
+
+  header {
+
+    &#header1 {
+      background: {
+        image: url("images/alcohol-architecture-bar-beer-260922.jpg");
+        size: cover;
+        repeat: no-repeat;
+      };
+
+      .container {
+        .row {
+          .col-12 {
+            margin: 200px auto;
+
+            .btn {
+              font-size: 18px;
+              background-color: $color-nav;
+              color: white;
+
+              &:hover {
+                background-color: $color-warning !important;
+                color: $color-nav !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  main {
+    #section1 {
+      width: 100%;
+      padding-right: 15px;
+
+
+      .row {
+        .col-12 {
+          background: {
+            image: url("images/potted-green-leafed-plant-beside-wall-1460138.jpg");
+            position: center;
+            size: cover;
+          };
+        }
+
+        .col-md-6 {
+          background-color: $color-nav;
+
+          .btn {
+            font-size: 18px;
+            background-color: white;
+            color: $color-nav;
+
+            &:hover {
+              background-color: $color-warning !important;
+              color: $color-nav !important;
+            }
+          }
+        }
+      }
+    }
+
+    #section2 {
+      width: 100%;
+      padding-right: 15px;
+
+      .row {
+
+        .col-12 {
+          color: white !important;
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+
+          .icon {
+            background-color: white;
+          }
+
+          &:hover {
+            background-color: white !important;
+            color: black !important;
+            border-left: 1px solid $color-warning;
+            border-right: 1px solid $color-warning;
+
+            .icon {
+              background-color: black;
+            }
+          }
+        }
+
+        .hover {
+          &:hover {
+            background-color: $color-warning !important;
+            color: white;
+
+            .icon {
+              background-color: white;
+            }
+          }
+        }
+
+      }
+    }
+
+    #section3 {
+      .container {
+        .row {
+          .col-md-4 {
+            background: {
+              image: url("images/potted-green-leafed-plant-beside-wall-1460138.jpg");
+              size: cover;
+              repeat: no-repeat;
+            };
+          }
+        }
+      }
+    }
+
+    #section4 {
+      background: {
+        image: url("images/alcohol-architecture-bar-beer-260922.jpg");
+        size: cover;
+        repeat: no-repeat;
+      };
+
+      .container{
+        .row{
+          .col12{
+            border-radius: 12px;
+            background: $color-warning;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    #section5 {
+      .container{
+        .row{
+          .col-12{
+            .btn {
+              font-size: 18px;
+              background-color: $color-nav;
+              color: $color-nav;
+
+              &:hover {
+                background-color: $color-warning !important;
+                color: $color-nav !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #section6 {
+      background-color: $color-nav2;
+    }
+  }
+
+  footer {
+    background-color: $color-nav;
+  }
+
+}
+
+
+/************************ MEDIA **************************/
+
+@media (max-width: 767px) {
+  .mb-6{
+    margin-bottom: 80px !important;
+  }
+
+  *{
+
+    main{
+
+
+    }
+
+  }
+}
